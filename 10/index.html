@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 10</title>
+</head>
+
+<body>
+    <table id="table">
+        aaa
+        <tr>
+            <td>Тест</td>
+        </tr>
+    </table>
+    <script>
+        alert(table); //таблиця, як і має бути
+        table.remove(); //чому в документі залишився текст "ааа"?
+
+        //Відповідь:
+        //Справа в тому, що текстовий вузол "aaa" при побудові сторінки браузером буде винесений за тег <table></table>
+        //ще до виконання table.remove(), а отже він не буде видалений разом з table, оскільки не є його частиною
+    </script>
+</body>
+
+</html>

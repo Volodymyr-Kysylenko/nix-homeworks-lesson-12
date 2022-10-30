@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 7</title>
+</head>
+
+<body>
+    <script>
+        let body = document.body; //отримуємо елемент body
+        body.innerHTML = "<!--" + body.tagName + "-->"; //замінюємо весь вміст body на коментар <!--BODY-->, 
+        //тут tagName повертає назву тега body у верхньому регістрі - "BODY"
+        alert(body.firstChild.data); //таким чином першим (і єдиним) вузлом в body буде коментар <!--BODY--> 
+        //для цього вузла через alert() ми виводимо властивість data, яке має значення "BODY"
+    </script>
+</body>
+
+</html>

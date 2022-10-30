@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 9</title>
+</head>
+
+<body>
+    <ol id="elem">
+        <li>Привет</li>
+        <li>Мир</li>
+    </ol>
+    <script>
+        //Найпростіший варіант
+        function clear(elem) {
+            elem.innerHTML = '';
+        }
+        clear(elem);
+
+        //Складніший варіант, але теж в одну строку
+        // function clear(elem) {
+        //     Array.from(elem.childNodes).forEach(item => item.remove());
+        // }
+        // clear(elem);
+
+        //Варіант з циклом
+        // function clear(elem) {
+        //     while (elem.firstChild) {
+        //         elem.firstChild.remove();
+        //     }
+        // }
+        // clear(elem);
+    </script>
+</body>
+
+</html>
